@@ -1,12 +1,22 @@
 $(document).ready(function(){
+	$('.ryu-presentation').fadeOut(5000,function(){
+		$('.ryu-still').show();
+		$('.hadouken-Instructions').show();
+		$('.coolPose-Instructions').show();
+	})
+
 	$('.ryu').mouseenter(function(){
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
+		$('.hadouken-Instructions').hide();
+		$('.coolPose-Instructions').hide();
 	})
 
 	.mouseleave(function(){
 		$('.ryu-ready').hide();
 		$('.ryu-still').show();
+		$('.hadouken-Instructions').show();
+		$('.coolPose-Instructions').show();
 	})
 
 	.mousedown(function(){
@@ -23,6 +33,7 @@ $(document).ready(function(){
 				$(this).css('left','520px');	
 			}
 		);
+		
 	})
 
 	.mouseup(function(){
@@ -30,6 +41,7 @@ $(document).ready(function(){
 		//ryu goes back to this ready position
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
+		
 	})
 
 	$(document).keydown(function(e) {

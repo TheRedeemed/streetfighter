@@ -14,16 +14,41 @@ body{
 	height: 500px;
 }
 
-.ryu{
+/*.ryu{
 	outline: red 1px solid;
-}
+}*/
 
-.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool{
 	width: 659px;
 	height: 494px;
 }
 
-.ryu-ready, .ryu-throwing, .ryu-cool{
+.hadouken-Instructions, .coolPose-Instructions{
+	display: none;
+	font-size: 50px;
+	font-family: comic sans ms;
+	color: red;
+}
+
+.hadouken-Instructions{
+	/*border: 1px solid black;*/
+	position: relative;
+	top: -450px;
+	left: 750px;
+	width: 450px;
+	height: 100px;
+}
+
+.coolPose-Instructions{
+	/*border: 1px solid black;*/
+	position: relative;
+	top: -320px;
+	left: 620px;
+	width: 465px;
+	height: 170px;
+}
+
+.ryu-still, .ryu-ready, .ryu-throwing, .ryu-cool{
 	display: none;
 }
 
@@ -58,3 +83,20 @@ body{
 	float: left;
 }
 
+.ryu-presentation{
+	width: 700px;
+	height: 585px;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 4%;
+	border: 1px solid red;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.welcome{
+	text-align: center;
+	color: red;
+	font-size: 40px;
+	margin: 2%;
+}
